@@ -46,7 +46,7 @@ LIST_TYPE can be one of:
   e (or ended)      For listing ended sessions
   A (or all)        For listing all sessions
 
-The --editinit option opens \$EDITOR to let you edit the active session's init.sh file
+The --editinit option opens $EDITOR to let you edit the active session's init.sh file
   This option requires that you are already inside the session whose init file you want to edit.
 ```
 
