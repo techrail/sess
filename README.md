@@ -1,4 +1,4 @@
-# sess
+# sess - A ZSH session manager built as zshy plugin
 
 `sess` is a **session manager** for terminal which is **not a terminal multiplexer**. Using sess you can create sessions that have different environments. A session, in this context, is an _isolated environment_ in a shell. Think of it like creating a separate `.zshrc` file for one tab in your terminal window for a particular usecase. That's what this tool does. 
 
