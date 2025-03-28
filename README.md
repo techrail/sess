@@ -20,9 +20,6 @@ Once the installation completes, you can open a new terminal window (or tab) and
 
 **NOTE**: On the first run, `sess` might complain with an error message like this: `ZSHY_SESS_DATA_PATH points to a non-existent location`. It should also give you a command to create that  path. Please run that command to create the directory. It is in that directory that your sessions (the history file, the init file and the lock file) are stored.
 ## Usage and options
-**FINISH THIS SECTION**
-
-
 When you run sess, you will get the following output. So let's discuss the options listed.
 
 ```
@@ -65,17 +62,20 @@ Listing of sessions can be done using the `-l` option along with the filter. The
 - **just live sessions** (`l`): `sess -l l`
 - **just ended sessions** (`e`): `sess -l e` 
 - **all sessions irrespective of their states** (`A`): `sess -l A`
+
 ### Session Management options
 There are 4 actions that you can take with a session (other than listing it and editing the init script):
 
 1. **Create**: _Obviously!_
-2. **Join**: You can join the session. Doing so will launch a new sub-shell from where you launched it! When you exit the shell (using either `Ctrl + D` or `exit`), you will return to the old shell (and the old environment) from where you joined the session. 
+2. **Join**: You can join the session. Doing so will launch a new sub-shell from where you launched it! When you exit the shell (using either <kbd>Ctrl</kbd> + <kbd>D</kbd> or `exit`), you will return to the old shell (and the old environment) from where you joined the session. 
 3. **End**: You can end a session. You can only end a session which is _active_ but not _live_. Please note that _if you ever exit a session by killing it forcefully, such as by closing the terminal tab, of if your computer crashed or lost power while you were in a session, then that session will always appear to be live_!
 4. **Delete**: You can delete a session. However, you can only delete a session which you have ended. 
 
 **VERY IMPORTANT: DELETING A SESSION WILL DELETE THE ASSOCIATED HISTORY FILE, INIT FILE AND THE LOCK FILE FROM THE DISK PERMANENTLY. PLEASE BE CAREFUL!**
+
 ## Usecases
 The origin story of `sess` is an interesting one, and a compelling reason why you might want `sess` too. Since then I have found multiple reasons to use sess. Some of them are: 
+
 ### Having a separate `$PATH`
 Sometimes you need to use different versions of software which are located at different places in your filesystem but you can't keep updating your `$PATH` everytime you need to do that, right!?
 
