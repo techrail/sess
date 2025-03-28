@@ -18,7 +18,6 @@ elif [ ! -f "${ZSHY_SESS_DATA_PATH}/active.${1}/zsh_history.txt" ]; then
 fi
 
 # Check the lock file value and if it is 0, end the session
-__existing_session_lock_value
 __existing_session_lock_value=$(cat "${ZSHY_SESS_DATA_PATH}/active.${1}/session_in_use")
 
 if [ $__existing_session_lock_value -gt 0 ]; then

@@ -12,4 +12,10 @@ if [ ! -d "${ZSHY_SESS_DATA_PATH}/active.${ZSH_SESSION_NAME}" ]; then
   return 39
 fi
 
-$EDITOR "${ZSHY_SESS_DATA_PATH}/active.${ZSH_SESSION_NAME}/init.sh"
+if [[ $EDITOR == "" ]]; then
+  clpr red "\$EDITOR is not set. Cannot edit the init file"
+  echo "Please set \$EDITOR to an editor"
+  return 38
+else
+  $EDITOR "${ZSHY_SESS_DATA_PATH}/active.${ZSH_SESSION_NAME}/init.sh"
+fi

@@ -14,7 +14,7 @@ echo "                    Adding '--loop' after the session name will rejoin the
 echo "                      for upto 10 quits."
 echo "  -e (or --end)     Ends the session with sess_name."
 echo "  -D (or --delete)  Deletes an ended session with sess_name from disk."
-echo "  --editinit        Opens nano to let you edit the sess_name's init.sh file"
+echo "  --editinit        Opens your \$EDITOR to let you edit the sess_name's init.sh file"
 echo ""
 echo "LIST_TYPE can be one of:"
 echo "  a (or active)     For listing active sessions"
