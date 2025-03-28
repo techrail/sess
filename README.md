@@ -40,7 +40,7 @@ MGMT_OPERATION can be one of:
                       for upto 10 quits.
   -e (or --end)     Ends the session with sess_name.
   -D (or --delete)  Deletes an ended session with sess_name from disk.
-  --editinit        Opens nano to let you edit the sess_name's init.sh file
+  --editinit        Opens your $EDITOR to let you edit the sess_name's init.sh file
 
 LIST_TYPE can be one of:
   a (or active)     For listing active sessions
