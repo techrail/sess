@@ -23,5 +23,5 @@ echo "                    Live sessions are active sessions running in a termina
 echo "  e (or ended)      For listing ended sessions"
 echo "  A (or all)        For listing all sessions"
 echo ""
-echo "The --editinit option opens nano to let you edit the active session's init.sh file"
+echo "The --editinit option opens your $EDITOR to let you edit the active session's init.sh file"
 echo "  This option requires that you are already inside the session whose init file you want to edit."
